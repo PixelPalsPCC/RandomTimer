@@ -28,9 +28,8 @@ void setup() {
 
 void draw(){
   background(102);
-  println(strike);
-  
-  println("Timer " + timer);
+  // println(strike);
+  // println("Timer " + timer);
   //println("striketime: " + striketime);
   //println("millis: " + millis());
   //println("offtimer: " + offtimer);
@@ -42,7 +41,6 @@ void draw(){
   
   if (offtimer <= millis()) {
       strike = false;       
-      println("AAAAAAAAAA");
 
   }
   
@@ -51,7 +49,6 @@ void draw(){
      int mil = millis();
      striketime = mil + timer;
      offtimer = mil + 1000;
-    // shape(bot, 110, 90, 100, 100);  // Draw at coordinate (110, 90) at size 100 x 100
     strike = true;
     
   }
